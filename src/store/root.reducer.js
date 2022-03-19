@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import { connectRouter } from 'connected-react-router';
-import appInfoReducer from './app-info/appInfo.reducer';
+import appInfoReducer from './app-info/app-info.reducer';
+
 
 const appReducer = (history) => combineReducers({
     router: connectRouter(history),

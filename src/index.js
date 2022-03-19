@@ -1,16 +1,16 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
-import App from './modules/App';
+import AppContainer from './modules/AppContainer';
 import reportWebVitals from './reportWebVitals';
-import configureStore from './modules/store/configureStore';
+import configureStore from './store/root.store';
 
 const initialState = {};
 const store = configureStore(initialState);
 
 ReactDOM.render(
   <Provider store={store}>
-    <App/>
+    <AppContainer/>
   </Provider>,
   document.getElementById('root')
 );

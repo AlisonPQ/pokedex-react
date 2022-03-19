@@ -11,7 +11,9 @@
     "react-router-dom": "~6.2.2",
     "react-scripts": "5.0.0",
     "redux": "~4.1.2",
+    "redux-arc": "^0.7.5",
     "redux-observable": "~2.0.0",
+    "rxjs": "^7.5.5",
     "web-vitals": "~2.1.4"
   },
   "scripts": {

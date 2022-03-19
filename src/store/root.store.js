@@ -3,8 +3,8 @@ import { routerMiddleware } from 'connected-react-router';
 import { createBrowserHistory } from 'history';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { applyMiddleware, createStore} from 'redux';
-import createRootReducer from './rootReducer';
-import rootEpic from './rootEpic';
+import createRootReducer from './root.reducer';
+import rootEpic from './root.epics';
 
 export const history = createBrowserHistory();
 
