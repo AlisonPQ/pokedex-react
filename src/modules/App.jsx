@@ -1,15 +1,26 @@
 import { useEffect } from 'react';
+import { connect } from 'react-redux';
+import AppRouter from './AppRouter';
 
-const App = ({ getAppInfo }) => {
+
+const mapStateToProps = ({
+  pokemons
+}) => ({
+  pokemons
+});
+
+const mapActionsToProps = {};
+
+const App = ({ getAppInfo  }) => {
   useEffect(() => {
     getAppInfo();
   }, [getAppInfo]);
 
   return (
     <div>
-      Innocent react app here
+      <AppRouter />
     </div>
   );
 }
 
-export default App;
+export default connect(mapStateToProps, mapActionsToProps)(App);
